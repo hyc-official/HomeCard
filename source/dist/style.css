@@ -19,6 +19,11 @@ a:hover {
 .user-avatar {
     height: 10em;
     margin-bottom: 0.5em;
+    box-shadow: 0 0 0.3em #000;
+    transition: 0.3s;
+}
+.user-avatar:hover {
+    box-shadow: 0 0 1em #000;
 }
 .user-name, .user-slogan {
     text-align: center;
@@ -39,12 +44,16 @@ a:hover {
     text-align: center;
     text-decoration: none;
     padding: 1em;
-    margin: 0.1em;
+    margin: 0.3em;
     flex-grow: 1;
     border-radius: 0.5em;
+    box-shadow: 0 0 0.2em #000;
+    transition: 0.3s;
 }
 .linkblock:hover {
     color: #fff;
+    box-shadow: 0.25em 0.25em 0.3em #000;
+    transform: translate(-0.2em, -0.2em);
 }
 .linkicon {
     font-size: 1.3em;
@@ -56,6 +65,15 @@ a:hover {
 }
 .linkicon:last-of-type {
     margin-right: auto;
+}
+
+.card {
+    box-shadow: 0 0 0.7em #000 !important;
+    transition: 0.3s;
+}
+.card:hover {
+    box-shadow: 0.5em 0.5em 0.9em #000 !important;
+    transform: translate(-0.2em, -0.2em);
 }
 
 .rotateimg {
