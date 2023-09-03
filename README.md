@@ -16,6 +16,7 @@
     ```json
     {
         "title": string, // 页面标题
+        "favicon": string, // 浏览器标签页图标 URL
         "user": { // 作者设置
             "name": string, // 作者名称
             "slogan": string, // 个性签名

@@ -1,5 +1,6 @@
 {
     "title": "Heyc",
+    "favicon": "./dist/favicon.ico",
     "user": {
         "name": "Heyc",
         "slogan": "嘿嘿哈",

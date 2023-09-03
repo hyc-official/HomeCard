@@ -9,6 +9,9 @@
         <script src="https://unpkg.com/mdui@1.0.2/dist/js/mdui.min.js"></script>
         <!--fa icon-->
         <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/6.4.2/css/all.css" />
+        <% if (favicon) { %>
+            <link rel="shortcut icon" type="image/x-icon" href="<%= favicon %>">
+        <% } %>
         <% if (background.showimg) { %>
             <style>
                 body {
