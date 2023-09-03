@@ -1,0 +1,72 @@
+{
+    "title": "Heyc",
+    "user": {
+        "name": "Heyc",
+        "slogan": "嘿嘿哈",
+        "avatar": "https://cdn.luogu.com.cn/upload/usericon/532854.png"
+    },
+    "customhtml": {
+        "headend": "",
+        "bodyend": "",
+        "cardend": ""
+    },
+    "background": {
+        "showimg": true,
+        "imgurl": "https://api.heyc.eu.org/bing/process?blur=10"
+    },
+    "linkblocks": [
+        {
+            "icon": "fa-solid fa-blog",
+            "bgcolor": "#4C58DC",
+            "desc": "博客",
+            "title": "记录一些有趣的事情",
+            "url": "https://blog.heyc.eu.org/"
+        },
+        {
+            "icon": "fa-solid fa-blog",
+            "bgcolor": "#58DC4C",
+            "desc": "博客",
+            "title": "记录一些有趣的事情",
+            "url": "https://blog.heyc.eu.org/"
+        },
+        {
+            "icon": "fa-solid fa-blog",
+            "bgcolor": "#DC4C58",
+            "desc": "博客",
+            "title": "记录一些有趣的事情",
+            "url": "https://blog.heyc.eu.org/"
+        }
+    ],
+    "linkicons": [
+        {
+            "icon": "fa-brands fa-github",
+            "title": "GitHub",
+            "url": "https://github.com/hyc1230"
+        },
+        {
+            "icon": "fa-brands fa-github",
+            "title": "GitHub",
+            "url": "https://github.com/hyc1230"
+        },
+        {
+            "icon": "fa-brands fa-github",
+            "title": "GitHub",
+            "url": "https://github.com/hyc1230"
+        },
+        {
+            "icon": "fa-brands fa-github",
+            "title": "GitHub",
+            "url": "https://github.com/hyc1230"
+        },
+        {
+            "icon": "fa-brands fa-github",
+            "title": "GitHub",
+            "url": "https://github.com/hyc1230"
+        },
+        {
+            "icon": "fa-brands fa-github",
+            "title": "GitHub",
+            "url": "https://github.com/hyc1230"
+        }
+    ]
+}

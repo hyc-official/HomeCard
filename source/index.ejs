@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title><%= title %></title>
+        <link rel="stylesheet" href="./dist/style.css" />
+        <!--MDUI-->
+        <link rel="stylesheet" href="https://unpkg.com/mdui@1.0.2/dist/css/mdui.min.css" />
+        <script src="https://unpkg.com/mdui@1.0.2/dist/js/mdui.min.js"></script>
+        <!--fa icon-->
+        <script src="https://kit.fontawesome.com/5b3d86374a.js" crossorigin="anonymous"></script>
+        <% if (background.showimg) { %>
+            <style>
+                body {
+                    background-image: url("<%= background.imgurl %>");
+                    background-repeat: no-repeat;
+                    background-position: center;
+                }
+            </style>
+        <% } %>
+        <%= customhtml.headend %>
+    </head>
+    <body>
+        <div class="mdui-container-fluid main-container">
+            <div class="mdui-row">
+                <div class="mdui-col-sm-10 mdui-col-md-8 mdui-col-lg-6 mdui-col-xl-4 mdui-col-offset-sm-1 mdui-col-offset-md-2 mdui-col-offset-lg-3 mdui-col-offset-xl-4">
+                    <div class="mdui-card mdui-hoverable">
+                        <div class="mdui-card-content">
+                            <div class="user-nav">
+                                <img src="<%= user.avatar %>" class="mdui-img-circle mdui-center user-avatar rotateimg">
+                                <div class="mdui-center user-name"><b><%= user.name %></b></div>
+                                <div class="mdui-center user-slogan"><%= user.slogan %></div>
+                            </div>
+                            <div class="user-desc">
+                                <%- content %>
+                            </div>
+                            <div class="linkblocks">
+                                <% linkblocks.forEach((e) => { %>
+                                    <a class="linkblock" href="<%= e.url %>" style="background-color: <%= e.bgcolor %>;"
+                                        <% if (e.title) { %>
+                                            title="<%= e.title %>"
+                                        <% } %>
+                                    >
+                                        <% if (e.icon) { %>
+                                            <i class="<%= e.icon %>"></i>
+                                        <% } %>
+                                        <%- e.desc %>
+                                    </a>
+                                <% }) %>
+                            </div>
+                            <div class="linkicons">
+                                <% linkicons.forEach((e) => { %>
+                                    <a class="linkicon" href="<%= e.url %>"
+                                        <% if (e.title) { %>
+                                            title="<%= e.title %>"
+                                        <% } %>
+                                    >
+                                        <i class="<%= e.icon %>"></i>
+                                    </a>
+                                <% }) %>
+                            </div>
+                            <%= customhtml.cardend %>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <%= customhtml.bodyend %>
+    </body>
+</html>
