@@ -2,6 +2,7 @@ body::-webkit-scrollbar {
     display: none;
 }
 a {
+    text-decoration: none;
     color: #4682dc;
 }
 a:hover {
@@ -41,6 +42,9 @@ a:hover {
     margin: 0.1em;
     flex-grow: 1;
     border-radius: 0.5em;
+}
+.linkblock:hover {
+    color: #fff;
 }
 .linkicon {
     font-size: 1.3em;
