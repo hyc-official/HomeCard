@@ -18,7 +18,7 @@
                 }
             </style>
         <% } %>
-        <%= customhtml.headend %>
+        <%- customhtml.headend %>
     </head>
     <body>
         <div class="mdui-container-fluid main-container">
@@ -29,7 +29,7 @@
                             <div class="user-nav">
                                 <img src="<%= user.avatar %>" class="mdui-img-circle mdui-center user-avatar rotateimg">
                                 <div class="mdui-center user-name"><b><%= user.name %></b></div>
-                                <div class="mdui-center user-slogan"><%= user.slogan %></div>
+                                <div class="mdui-center user-slogan"><%- user.slogan %></div>
                             </div>
                             <div class="user-desc">
                                 <%- content %>
@@ -59,12 +59,12 @@
                                     </a>
                                 <% }) %>
                             </div>
-                            <%= customhtml.cardend %>
+                            <%- customhtml.cardend %>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <%= customhtml.bodyend %>
+        <%- customhtml.bodyend %>
     </body>
 </html>
