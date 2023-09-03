@@ -1,6 +1,6 @@
 # HomeCard
 
-<center>一个易于部署、高自定义性的个人主页资料卡片🚀</center>
+<p align="center">一个易于部署、高自定义性的个人主页资料卡片🚀</p>
 
 ## Demo
 
