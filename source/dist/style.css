@@ -1,6 +1,12 @@
 body::-webkit-scrollbar {
     display: none;
 }
+a {
+    color: #4682dc;
+}
+a:hover {
+    color: #2e63b2;
+}
 
 .main-container {
     margin-top: 10em;
@@ -40,10 +46,6 @@ body::-webkit-scrollbar {
     font-size: 1.3em;
     text-decoration: none;
     margin: 0.3em;
-    color: #4682dc;
-}
-.linkicon:hover {
-    color: #2e63b2;
 }
 .linkicon:first-of-type {
     margin-left: auto;
