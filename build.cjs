@@ -15,7 +15,7 @@ function build(dir, cfg) {
             const content = marked.parse(fs.readFileSync(path.join(dir, path.parse(file).name + ".md"), "utf-8"));
             cfg.content = content;
             const html = ejs.render(data, cfg);
-            fs.writeFileSync(path.join(dir, path.parse(file).name + ".html"), html);
+            fs.writeFileSync(path.join(dir, path.parse(file).name + ".html"), html, "utf-8");
         }
     });
 }
