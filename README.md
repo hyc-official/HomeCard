@@ -13,7 +13,7 @@
 1. Fork 本仓库。
 2. 在 Actions 选项卡中，打开工作流（Workflow）执行。
 3. 修改设置文件 `source/config.json`，标准如下：
-    ```json
+    ```javascript
     {
         "title": string, // 页面标题
         "favicon": string, // 浏览器标签页图标 URL
