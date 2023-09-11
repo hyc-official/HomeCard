@@ -35,6 +35,14 @@ a:hover {
 .user-slogan {
     color: #504444;
 }
+.music-player-inside {
+    width: 100%;
+}
+.music-player-outside {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
 .linkblocks, .linkicons {
     width: 100%;
     display: flex;

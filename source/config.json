@@ -69,5 +69,14 @@
             "title": "GitHub",
             "url": "https://github.com/hyc1230"
         }
-    ]
+    ],
+    "music": {
+        "enabled": true,
+        "outside": true,
+        "metingapi": "https://api.mizore.cn/meting/api.php",
+        "metingoptions": {
+            "auto": "https://music.163.com/#/song?id=1963654951",
+            "fixed": "true"
+        }
+    }
 }
