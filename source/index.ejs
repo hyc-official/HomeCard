@@ -15,18 +15,18 @@
         <!--MetingJS-->
         <% if (music.metingapi) { %>
             <script>
-                const meting_api = "<%= music.metingapi %>";
+                const meting_api = "<%- music.metingapi %>";
             </script>
         <% } %>
         <script src="https://unpkg.com/meting@2.0.1/dist/Meting.min.js"></script>
         
         <% if (favicon) { %>
-            <link rel="shortcut icon" type="image/x-icon" href="<%= favicon %>">
+            <link rel="shortcut icon" type="image/x-icon" href="<%- favicon %>">
         <% } %>
         <% if (background.showimg) { %>
             <style>
                 body {
-                    background-image: url("<%= background.imgurl %>");
+                    background-image: url("<%- background.imgurl %>");
                     background-repeat: no-repeat;
                     background-attachment: fixed;
                     background-position: center;
@@ -42,7 +42,7 @@
                     <div class="mdui-card card">
                         <div class="mdui-card-content">
                             <div class="user-nav">
-                                <img src="<%= user.avatar %>" class="mdui-img-circle mdui-center user-avatar rotateimg">
+                                <img src="<%- user.avatar %>" class="mdui-img-circle mdui-center user-avatar rotateimg">
                                 <div class="mdui-center user-name"><b><%= user.name %></b></div>
                                 <div class="mdui-center user-slogan"><%- user.slogan %></div>
                             </div>
@@ -53,16 +53,16 @@
                                 <% if (music.enabled && !music.outside) { %>
                                     <meting-js
                                         <% for (let i in music.metingoptions) { %>
-                                            <%= i %> ="<%= music.metingoptions[i] %>"
+                                            <%= i %> ="<%- music.metingoptions[i] %>"
                                         <% } %>
                                     ></meting-js>
                                 <% } %>
                             </div>
                             <div class="linkblocks">
                                 <% linkblocks.forEach((e) => { %>
-                                    <a class="linkblock" href="<%= e.url %>" style="background-color: <%= e.bgcolor %>;"
+                                    <a class="linkblock" href="<%- e.url %>" style="background-color: <%- e.bgcolor %>;"
                                         <% if (e.title) { %>
-                                            title="<%= e.title %>"
+                                            title="<%- e.title %>"
                                         <% } %>
                                     >
                                         <% if (e.icon) { %>
@@ -74,9 +74,9 @@
                             </div>
                             <div class="linkicons">
                                 <% linkicons.forEach((e) => { %>
-                                    <a class="linkicon" href="<%= e.url %>"
+                                    <a class="linkicon" href="<%- e.url %>"
                                         <% if (e.title) { %>
-                                            title="<%= e.title %>"
+                                            title="<%- e.title %>"
                                         <% } %>
                                     >
                                         <i class="<%= e.icon %>"></i>
