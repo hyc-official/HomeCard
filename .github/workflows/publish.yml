@@ -15,9 +15,7 @@ jobs:
       - name: Install Dependencies
         run: npm install
       - name: Build
-        run: node build.cjs
-      - name: Minify
-        run: node mini.cjs
+        run: npm run build
       - name: Publish Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with: 
